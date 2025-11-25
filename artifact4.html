@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Jade Dragon - Museum Audio Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Museum Audio Gallery</h1>
+            <p>Explore ancient artifacts with immersive audio descriptions</p>
+        </header>
+
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-btn active">🏛️ Home</a>
+                <a href="artifact1.html" class="nav-btn">🏺 The Mona Lisa</a>
+                <a href="artifact2.html" class="nav-btn">⚔️ The Venus de Milo</a>
+                <a href="artifact3.html" class="nav-btn">📜 The Winged Victory of Samothrace</a>
+                <a href="artifact4.html" class="nav-btn">🐉 The Raft of the Medusa</a>
+            </div>
+        </nav>
+
+        <div class="artifact-page">
+            <div class="artifact-header">
+                <div class="artifact-icon">🐉</div>
+                <h2>The Raft of the Medusa</h2>
+                <p class="artifact-period">Paris, France, 1818-1819 BCE</p>
+            </div>
+            <div class="artifact-body">
+                <p class="artifact-description">
+                    This massive painting, over 16 feet wide, depicts a desperate pyramid of human suffering. You see a makeshift wooden raft tossing on dark, stormy seas. In the foreground, the bodies of the dead and dying lie tangled together—pale, twisted, and broken. Moving your eyes upward, you see the living survivors struggling to stand. They are piling on top of one another, reaching toward the horizon where a tiny, barely visible ship offers a sliver of hope. At the very peak of this human pyramid, a shirtless man waves a piece of cloth frantically. The lighting is high-contrast, casting deep shadows that emphasize the starving ribs and terrified muscles of the sailors.
+                </p>
+                
+                <div class="audio-section">
+                    <h3>🎧 Audio Guide</h3>
+                    <div class="audio-player">
+                        <button class="play-btn" id="playBtn">▶</button>
+                        <div class="audio-info">
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <a href="artifact3.html" class="nav-page-btn">← Previous</a>
+                    <a href="index.html" class="nav-page-btn">🏛️ Home</a>
+                    <a href="#" class="nav-page-btn disabled">Next →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="audio-player.js"></script>
+    <script>
+        initAudioPlayer('aud5.mp3');
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Egyptian Vase - Museum Audio Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Museum Audio Gallery</h1>
+            <p>Explore ancient artifacts with immersive audio descriptions</p>
+        </header>
+
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-btn active">🏛️ Home</a>
+                <a href="artifact1.html" class="nav-btn">🏺 The Mona Lisa</a>
+                <a href="artifact2.html" class="nav-btn">⚔️ The Venus de Milo</a>
+                <a href="artifact3.html" class="nav-btn">📜 The Winged Victory of Samothrace</a>
+                <a href="artifact4.html" class="nav-btn">🐉 The Raft of the Medusa</a>
+            </div>
+        </nav>
+
+        <div class="artifact-page">
+            <div class="artifact-header">
+                <div class="artifact-icon">🏺</div>
+                <h2>The Mona Lisa</h2>
+                <p class="artifact-period">Florence, Italy, 1503-1519 BCE</p>
+            </div>
+            <div class="artifact-body">
+                <p class="artifact-description">
+                    You are standing before a small painting, just 30 by 21 inches. It is a portrait of a woman seated against a distant, misty landscape of jagged mountains and winding rivers. She sits upright with her body turned slightly to the right, but her face is turned to look directly at you. Her hands are crossed gently on the arm of her chair, the right hand resting over the left. She wears a dark, modest dress with intricate embroidery on the neckline, and a sheer veil covers her hair. The most striking feature is her expression—her faint, barely-there smile seems to change depending on where you look. The artist, Leonardo da Vinci, used a technique called 'sfumato,' blurring the corners of her eyes and mouth to create a soft, smoky calmness that has captivated the world for centuries.
+                </p>
+                
+                <div class="audio-section">
+                    <h3>🎧 Audio Guide</h3>
+                    <div class="audio-player">
+                        <button class="play-btn" id="playBtn">▶</button>
+                        <div class="audio-info">
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <a href="#" class="nav-page-btn disabled">← Previous</a>
+                    <a href="index.html" class="nav-page-btn">🏛️ Home</a>
+                    <a href="artifact2.html" class="nav-page-btn">Next →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="audio-player.js"></script>
+    <script>
+        initAudioPlayer('aud1.mp3');
+    </script>
+</body>
+</html>

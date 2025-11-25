@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Manuscript - Museum Audio Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Museum Audio Gallery</h1>
+            <p>Explore ancient artifacts with immersive audio descriptions</p>
+        </header>
+
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-btn active">🏛️ Home</a>
+                <a href="artifact1.html" class="nav-btn">🏺 The Mona Lisa</a>
+                <a href="artifact2.html" class="nav-btn">⚔️ The Venus de Milo</a>
+                <a href="artifact3.html" class="nav-btn">📜 The Winged Victory of Samothrace</a>
+                <a href="artifact4.html" class="nav-btn">🐉 The Raft of the Medusa</a>
+            </div>
+        </nav>
+
+        <div class="artifact-page">
+            <div class="artifact-header">
+                <div class="artifact-icon">📜</div>
+                <h2>The Winged Victory of Samothrace</h2>
+                <p class="artifact-period">Samothrase, Greek, 200-190 BCE</p>
+            </div>
+            <div class="artifact-body">
+                <p class="artifact-description">
+                    This dramatic sculpture stands at the top of a grand staircase, commanding the space like a ship's figurehead. It depicts the goddess Nike landing on the prow of a stone warship. She is headless and armless, but her body is full of explosive energy. Her massive, feathered wings extend high behind her—the right wing is an original marble piece, while the left is a plaster reconstruction. She leans forward into a strong imaginary wind that presses her thin, wet-looking clothing against her stomach and legs, revealing the female form underneath. The fabric ripples and flaps violently behind her, freezing a moment of triumphant motion in solid stone.
+                </p>
+                
+                <div class="audio-section">
+                    <h3>🎧 Audio Guide</h3>
+                    <div class="audio-player">
+                        <button class="play-btn" id="playBtn">▶</button>
+                        <div class="audio-info">
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <a href="artifact2.html" class="nav-page-btn">← Previous</a>
+                    <a href="index.html" class="nav-page-btn">🏛️ Home</a>
+                    <a href="artifact4.html" class="nav-page-btn">Next →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="audio-player.js"></script>
+    <script>
+        initAudioPlayer('aud3.mp3');
+    </script>
+</body>
+</html>

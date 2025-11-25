@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Bronze Helmet - Museum Audio Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Museum Audio Gallery</h1>
+            <p>Explore ancient artifacts with immersive audio descriptions</p>
+        </header>
+
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-btn active">🏛️ Home</a>
+                <a href="artifact1.html" class="nav-btn">🏺 The Mona Lisa</a>
+                <a href="artifact2.html" class="nav-btn">⚔️ The Venus de Milo</a>
+                <a href="artifact3.html" class="nav-btn">📜 The Winged Victory of Samothrace</a>
+                <a href="artifact4.html" class="nav-btn">🐉 The Raft of the Medusa</a>
+            </div>
+        </nav>
+
+        <div class="artifact-page">
+            <div class="artifact-header">
+                <div class="artifact-icon">⚔️</div>
+                <h2>The Venus de Milo</h2>
+                <p class="artifact-period">Milos, Greek, 130-100 BCE</p>
+            </div>
+            <div class="artifact-body">
+                <p class="artifact-description">
+                    Towering before you is a six-foot-eight marble statue of the Greek goddess Aphrodite. She stands with her weight on her right leg, creating a graceful 'S' curve through her body. Her torso is nude, revealing smooth, idealized skin, while her lower body is wrapped in heavy, draped fabric that bunches realistically at her hips, looking as if it is about to slip down. Her most famous feature is what is missing: both of her arms are broken off. Her hair is pulled back in wavy rows into a bun, and her face bears a blank, serene expression typical of classical Greek art. The marble is cool and white, contrasting with the dynamic shadows created by the folds of her drapery.
+                </p>
+                
+                <div class="audio-section">
+                    <h3>🎧 Audio Guide</h3>
+                    <div class="audio-player">
+                        <button class="play-btn" id="playBtn">▶</button>
+                        <div class="audio-info">
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <a href="artifact1.html" class="nav-page-btn">← Previous</a>
+                    <a href="index.html" class="nav-page-btn">🏛️ Home</a>
+                    <a href="artifact3.html" class="nav-page-btn">Next →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="audio-player.js"></script>
+    <script>
+        initAudioPlayer('aud2.mp3');
+    </script>
+</body>
+</html>
